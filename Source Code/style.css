@@ -1,0 +1,44 @@
+#TitleBar{
+    display: flex;
+    justify-content: space-between;
+    margin: 0%;
+    padding: 0%;
+    height: 5vh;
+    width: 100vw;
+    background-color: rgb(35, 35, 35);
+    align-items: center;
+}
+#WindowTemplate body{
+    padding: 0%;
+    margin: 0%;
+}
+#Close{
+    height: 5vh;
+    width: 5vh;
+    margin: 0%;
+    border: none;
+    background-color: rgba(255, 0, 0, 0);
+}
+#Close:hover{
+    background-color: rgba(255, 0, 0, 0.400);
+}
+#Minimize{
+    height: 5vh;
+    width: 5vh;
+    margin: 0%;
+    border: none;
+    background-color: rgba(157, 157, 157, 0);
+}
+#Minimize:hover{
+    background-color: rgba(157, 157, 157, 0.2);
+}
+#TitleActions{
+    display : flex;
+}
+#TitleText{
+    margin: 0.5vw;
+    color: rgba(174, 174, 174, 0.3);
+}
+#TitleText:hover{
+    color: rgba(174, 174, 174, 0.8);
+}
