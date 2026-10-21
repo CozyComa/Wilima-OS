@@ -5,24 +5,44 @@
         <script src="../JS files/script1.js"></script>
     </head>
     <body>
-        <section id = "WindowBlueprintTemplate">
-            <section class = "WindowBlueprint">
-                <div class = "TitleBar">
-                    <div class = "TitleText"></div>
-                    <div class = "TitleActions"></div>
-                </div>
-                <div class = "AppArea"></div>
-            </section>
+        <section class = "WindowBlueprint">
+            <div class = "TitleBar">
+                <div class = "TitleText"></div>
+                <div class = "TitleActions"></div>
+            </div>
+            <div class = "AppArea"></div>
         </section>
         <section id = "AppIcons">
-            <div id = "FileExplorerIcon"></div>
-            <div id = "CalculatorIcon"></div>
-            <div id = "SettingsIcon"></div>
-            <div id = "TextEdiorIcon"></div>
-            <div id = "ClockIcon"></div>
-            <div id = "TerminalIcon"></div>
-            <div id = "PaintIcon"></div>
-            <div id = "CalendarIcon"></div>
+            <div class = "FileExplorerIcon">
+                <section class = "FileExplorerSA"></section>
+                <section class = "FileExplorerSB"></section>
+            </div>
+            <div class = "CalculatorIcon">
+                <section class="CalcBody">
+                    <div class="CalcScreen"></div>
+                    <section class="CalcBGrid">
+                        <section class="CalcBRow"><div class="CalcB"></div><div class="CalcB"></div><div class="CalcB"></div></section>
+                        <section class="CalcBRow"><div class="CalcB"></div><div class="CalcB"></div><div class="CalcB"></div></section>
+                    </section>
+                </section>
+            </div>
+            <div class = "SettingsIcon">
+                <section class="SettingsBody">
+                    <section class="SettingsSe1"><section class="SettingsSeDi1"></section></section>
+                    <section class="SettingsSe2"><section class="SettingsSeDi2"></section></section>
+                </section>
+            </div>
+            <div class = "TextEdiorIcon">
+                <section class = "TextEditorBody">A</section>
+            </div>
+            <div class = "ClockIcon">
+                <section class="ClockBody">
+                    
+                </section>
+            </div>
+            <div class = "TerminalIcon"></div>
+            <div class = "PaintIcon"></div>
+            <div class = "CalendarIcon"></div>
         </section>
     </body>
 </html>
