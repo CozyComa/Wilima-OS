@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="../style.css">
-        <script src="../JS files/script1.js"></script>
+        <script src="../JS files/script1.js" defer></script>
     </head>
     <body>
         <section class = "WindowBlueprint">
@@ -50,8 +50,13 @@
             </div>
             <div class = "CalendarIcon">
                 <section class = "CalendarBody">
-                    <section class = "CalendarIconDay">30th</section>
-                    <section class = "CalendarIconMonth">Feb</section>
+                    <section class ="CalendarIconTop"></section>
+                    <section class ="CalendarIconBottom">
+                        <svg class="CalendarIconRow" viewBox = "0 0 75 20">
+                            <line x1 = "0" y1 = "10" x2 = "25" y2 = "10" stroke-width = "10" stroke-linecap = "round"></line>
+                            <line x1 = "50" y1 = "10" x2 = "75" y2 = "10" stroke-width = "10" stroke-linecap = "round"></line>
+                        </svg>
+                    </section>
                 </section>
             </div>
         </section>
