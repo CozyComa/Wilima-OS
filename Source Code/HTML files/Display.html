@@ -6,6 +6,146 @@
         <script src="../JS files/script1.js" defer></script>
     </head>
     <body id = "Display">
+        <section id="Blueprints">
+        <section class = "Window">
+            <div class="ResizeLines">
+                    <section class="HRL">
+                        <section class="TopHRL"></section>
+                        <section class="BottomHRL"></section>
+                    </section>
+                    <section class="VRL">
+                        <section class="RightVRL"></section>
+                        <section class="LeftVRL"></section>
+                    </section>
+                <section class="VerticalResizeLines"></section>
+            </div>
+            <div class = "TitleBar">
+                <div class = "Title">
+                    <section class="TitleIcon"></section>
+                    <section class="TitleText"></section>
+                </div>
+                <div class = "TitleActions">
+                    <section class="Close">x</section>
+                </div>
+            </div>
+            <div class = "AppArea"></div>
+        </section>
+        <section id = "AppIcons">
+            <div class = "FileExplorerIcon" class>
+                <section class = "FileExplorerSA"></section>
+                <section class = "FileExplorerSB"></section>
+            </div>
+            <div class = "CalculatorIcon">
+                <section class="CalcBody">
+                    <div class="CalcScreen"></div>
+                    <section class="CalcBGrid">
+                        <section class="CalcBRow"><div class="CalcB"></div><div class="CalcB"></div><div class="CalcB"></div></section>
+                        <section class="CalcBRow"><div class="CalcB"></div><div class="CalcB"></div><div class="CalcB"></div></section>
+                    </section>
+                </section>
+            </div>
+            <div class = "SettingsIcon">
+                <section class="SettingsBody">
+                    <section class="SettingsSe1"><section class="SettingsSeDi1"></section></section>
+                    <section class="SettingsSe2"><section class="SettingsSeDi2"></section></section>
+                </section>
+            </div>
+            <div class = "ClockIcon">
+                <section class="ClockBody">
+                    <svg class="ClockLines" viewBox = "0 0 100 100">
+                        <line x1 = "50" y1 = "50" x2 = "100" y2 = "50" stroke = "black"  stroke-width = "10"></line>
+                        <line x1 = "50" y1 = "50" x2 = "50" y2 = "100" stroke = "red"  stroke-width = "10"></line>
+                    </svg>
+                </section>
+            </div>
+            <div class = "TerminalIcon">
+                <section class = "TerminalBody">
+                    >_
+                </section>
+            </div>
+        </section>
+        <section id = "Apps">
+            <section class="SettingsApp">
+                <section class="TaskTransparencySetting">
+                    <p>Transparency(Opacity) of the Taskbar</p>
+                    <input type="range" min="0" max="100" class="TaskTransparencySlider" value="40">                    
+                </section>
+                <section class="BackgroundSetting">
+                    <p>Color of one of the background gradient color(RGB)</p>
+                    <section class="TaskColorSet">
+                        <input type="range" min="0" max="255" class="TaskRedSlider" value="175">
+                        <input type="range" min="0" max="255" class="TaskGreenSlider" value="90">
+                        <input type="range" min="0" max="255" class="TaskBlueSlider" value="0">
+                    </section>
+                </section>
+                <section class="TDSetting">
+                    <p>Toggle whether or not the date and time are visible</p>
+                    <input type="checkbox" checked class="TDCheck">
+                </section>
+            </section>
+            <section class = "FileExplorerApp">
+                <section class = "FileAddressBar">
+                    <section class="CreationTools">
+                        <button class="NewTextFile">
+                            New Text File
+                        </button>
+                        <button class="NewFolder">
+                            New Folder
+                        </button>
+                    </section>
+                    <button class="PreviousFolder">Back</button>
+                    <section class="FileAddress"></section>
+                </section>
+                <section class = "FileMain">
+                    <section class="MainFolders">
+                        <section class="Desktop">Desktop</section>
+                        <section class="Documents">Documents</section>
+                        <section class="CDrive">C Drive</section>
+                        <section class="Notes">Notes</section>
+                        <section class="Projects">Projects</section>
+                        <section class="System">System</section>
+                    </section>
+                    <section class="FolderView"></section> 
+                </section>
+            </section>
+            <section class = "TerminalApp">
+                <section>
+                    <section class="TerminalInstructions">UsableFunctions: Info, Credits, RandomInfoThatIHopeYouWillRead</section>
+                    <section class="TerminalIO"></section>
+                </section>
+                <section class="TerminalInputSection">
+                    <span>>>></span><input type="text" class="TerminalInput">
+                </section>
+            </section>
+            <section class = "ClockApp">
+                <section class="ClockInfo">
+                    <section class="ClockTime"></section>
+                    <section class="ClockDate"></section>
+                </section>
+            </section>
+            <section class="CalculatorApp">
+                <section class="Result"></section>
+                <section class="CalculatorGrid">
+                    <div class="Calc1">1</div>
+                    <div class="Calc2">2</div>
+                    <div class="Calc3">3</div>
+                    <div class="Calcx">x</div>
+                    <div class="Calc4">4</div>
+                    <div class="Calc5">5</div>
+                    <div class="Calc6">6</div>
+                    <div class="Calc/">/</div>
+                    <div class="Calc7">7</div>
+                    <div class="Calc8">8</div>
+                    <div class="Calc9">9</div>
+                    <div class="Calc-">-</div>
+                    <div class="Calc0">0</div>
+                    <div class="CalcBack">Back</div>
+                    <div class="Calc=">=</div>
+                    <div class="Calc+">+</div>
+                </section>
+            </section>
+        </section>
+    </section>
         <section  id = "Desktop"></section>
         <section id = "Taskbar">
             <div id = "TDInfo">
@@ -17,11 +157,8 @@
                 <div id="FileExplorerTaskIcon" class="TaskApp"></div>
                 <div id="TerminalTaskIcon" class="TaskApp"></div>
                 <div id="ClockTaskIcon" class="TaskApp"></div>
-                <div id="CalendarTaskIcon" class="TaskApp"></div>
-                <div id="CalculatorIcon" class="TaskApp"></div>
-                <div id="TextEditorTaskIcon" class="TaskApp"></div>
-                <div id="SettingsTaskIcon" class="TaskApp"></div>
+                <div id="CalculatorTaskIcon" class="TaskApp"></div>
             </div>
         </section>
     </body>
-</html> 
+</html>
