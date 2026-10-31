@@ -140,33 +140,33 @@ function UpdateZ(){
 document.addEventListener(
     "mousemove", (event) => {
         if(IsDragging){
-            DragWindow.style.left = (DragWindow.offsetLeft + event.movementX/5) + "px"
-            DragWindow.style.top = (DragWindow.offsetTop + event.movementY/5) + "px"
+            DragWindow.style.left = (DragWindow.offsetLeft + event.movementX) + "px"
+            DragWindow.style.top = (DragWindow.offsetTop + event.movementY) + "px"
         }
         if(IsResizing && ResizeWindow){
             switch(ResizeDir){
                 case "Bottom":
-                    ResizeWindow.style.height = (parseFloat(getComputedStyle(ResizeWindow).height) + event.movementY/5) + "px";
+                    ResizeWindow.style.height = (parseFloat(getComputedStyle(ResizeWindow).height) + event.movementY) + "px";
                     if(getComputedStyle(ResizeWindow).height !== getComputedStyle(ResizeWindow).minHeight){
-                        ResizeWindow.style.top = ((parseFloat(getComputedStyle(ResizeWindow).top)) + event.movementY/10) + "px";
+                        ResizeWindow.style.top = ((parseFloat(getComputedStyle(ResizeWindow).top)) + event.movementY/2) + "px";
                     }
                     break;
                 case "Top":
-                    ResizeWindow.style.height = (parseFloat(getComputedStyle(ResizeWindow).height) - event.movementY/5) + "px";
+                    ResizeWindow.style.height = (parseFloat(getComputedStyle(ResizeWindow).height) - event.movementY) + "px";
                     if(getComputedStyle(ResizeWindow).height !== getComputedStyle(ResizeWindow).minHeight){
-                        ResizeWindow.style.top = ((parseFloat(getComputedStyle(ResizeWindow).top)) + event.movementY/10) + "px";
+                        ResizeWindow.style.top = ((parseFloat(getComputedStyle(ResizeWindow).top)) + event.movementY/2) + "px";
                     }
                     break;
                 case "Left":
-                    ResizeWindow.style.width = (parseFloat(getComputedStyle(ResizeWindow).width) - event.movementX/5) + "px";
+                    ResizeWindow.style.width = (parseFloat(getComputedStyle(ResizeWindow).width) - event.movementX) + "px";
                     if(getComputedStyle(ResizeWindow).width !== getComputedStyle(ResizeWindow).minWidth){
-                        ResizeWindow.style.left = ((parseFloat(getComputedStyle(ResizeWindow).left)) + event.movementX/10) + "px";
+                        ResizeWindow.style.left = ((parseFloat(getComputedStyle(ResizeWindow).left)) + event.movementX/2) + "px";
                     }
                     break;
                 case "Right":
-                    ResizeWindow.style.width = (parseFloat(getComputedStyle(ResizeWindow).width) + event.movementX/5) + "px";
+                    ResizeWindow.style.width = (parseFloat(getComputedStyle(ResizeWindow).width) + event.movementX) + "px";
                     if(getComputedStyle(ResizeWindow).width !== getComputedStyle(ResizeWindow).minWidth){
-                        ResizeWindow.style.left = ((parseFloat(getComputedStyle(ResizeWindow).left)) + event.movementX/10) + "px";
+                        ResizeWindow.style.left = ((parseFloat(getComputedStyle(ResizeWindow).left)) + event.movementX/2) + "px";
                     }
                     break;
             }
@@ -243,3 +243,4 @@ function TerminalListenerAdd(){
         }
     )
 }
+5
